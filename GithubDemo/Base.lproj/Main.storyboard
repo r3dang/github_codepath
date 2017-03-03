@@ -31,17 +31,17 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="215"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jvS-5j-WRU" id="aE3-LW-5hP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="214.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="214"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3NI-v1-iF0">
-                                                    <rect key="frame" x="308" y="16" width="42" height="20.5"/>
+                                                    <rect key="frame" x="308" y="16" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.70522684010152292" green="0.70522684010152292" blue="0.70522684010152292" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQO-w2-UCD">
-                                                    <rect key="frame" x="192" y="16" width="42" height="20.5"/>
+                                                    <rect key="frame" x="192" y="16" width="42" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.65644828680203049" green="0.65644828680203049" blue="0.65644828680203049" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -72,7 +72,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xuz-xN-qoN">
-                                                    <rect key="frame" x="128" y="110" width="222" height="20.5"/>
+                                                    <rect key="frame" x="128" y="110" width="222" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -87,12 +87,12 @@
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Xuz-xN-qoN" secondAttribute="trailing" constant="17" id="3Fn-ON-gJG"/>
                                                 <constraint firstItem="RQO-w2-UCD" firstAttribute="leading" secondItem="xrp-yq-xYh" secondAttribute="trailing" constant="8" id="6Yj-AT-xsI"/>
-                                                <constraint firstItem="bU4-qm-w6O" firstAttribute="top" secondItem="aE3-LW-5hP" secondAttribute="topMargin" constant="8" id="8Vv-yi-dB2"/>
                                                 <constraint firstItem="bU4-qm-w6O" firstAttribute="leading" secondItem="aE3-LW-5hP" secondAttribute="leadingMargin" constant="8" id="Cpb-XP-YTx"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="m4j-nn-AOC" secondAttribute="bottom" constant="20.5" id="GCC-PB-Y85"/>
                                                 <constraint firstItem="xrp-yq-xYh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bU4-qm-w6O" secondAttribute="trailing" constant="20" id="KBV-QX-eqA"/>
                                                 <constraint firstItem="xrp-yq-xYh" firstAttribute="top" secondItem="bU4-qm-w6O" secondAttribute="top" id="NlG-1Y-Uue"/>
                                                 <constraint firstItem="YYt-Vt-aAE" firstAttribute="top" secondItem="bU4-qm-w6O" secondAttribute="bottom" constant="8" id="TeY-vz-Sqf"/>
+                                                <constraint firstItem="bU4-qm-w6O" firstAttribute="top" secondItem="aE3-LW-5hP" secondAttribute="topMargin" constant="8" id="UOx-fg-3Za"/>
                                                 <constraint firstItem="m4j-nn-AOC" firstAttribute="top" secondItem="YYt-Vt-aAE" secondAttribute="bottom" constant="22.5" id="YuQ-SD-cnO"/>
                                                 <constraint firstItem="3NI-v1-iF0" firstAttribute="leading" secondItem="DuC-R1-hZV" secondAttribute="trailing" constant="8" id="aIE-9M-e7Z"/>
                                                 <constraint firstItem="3NI-v1-iF0" firstAttribute="top" secondItem="DuC-R1-hZV" secondAttribute="top" id="b7f-G5-0nC"/>
@@ -122,14 +122,84 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" id="x5q-EH-pP8"/>
+                    <navigationItem key="navigationItem" id="x5q-EH-pP8">
+                        <barButtonItem key="leftBarButtonItem" title="Settings" id="een-H6-PyT">
+                            <connections>
+                                <segue destination="sQb-af-IGq" kind="presentation" id="X0j-DO-jUb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="MPz-Jw-EEM" id="BMK-4c-Zfz"/>
+                        <segue destination="sQb-af-IGq" kind="presentation" identifier="SettingsSegue" id="rws-dP-fhy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="624.79999999999995" y="-558.17091454272872"/>
+            <point key="canvasLocation" x="162" y="159"/>
+        </scene>
+        <!--Search Settings-->
+        <scene sceneID="A4w-Wv-dfj">
+            <objects>
+                <viewController id="yop-NP-4FW" customClass="SearchSettingsViewController" customModule="GithubDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k5X-nX-MDj"/>
+                        <viewControllerLayoutGuide type="bottom" id="vq5-7K-sZt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="snT-cv-Wgm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jOA-0v-3aQ">
+                                <rect key="frame" x="14" y="129" width="347" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="starChanged:" destination="yop-NP-4FW" eventType="valueChanged" id="lDf-9a-aUk"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minimum Number of Constructors:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i0E-qE-rFO">
+                                <rect key="frame" x="16" y="100" width="265" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uD8-9T-7wQ">
+                                <rect key="frame" x="166" y="167" width="42" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="2Em-zU-uH6"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Search Settings" id="52W-om-ssv">
+                        <barButtonItem key="leftBarButtonItem" title="Save" id="6vd-dT-Z2r">
+                            <connections>
+                                <action selector="save:" destination="yop-NP-4FW" id="0Jc-CA-TRp"/>
+                                <segue destination="kcP-vE-O7S" kind="presentation" id="3Nw-wp-GSG"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Cancal" id="dNU-iy-yCv">
+                            <connections>
+                                <action selector="cancalButtonPressed:" destination="yop-NP-4FW" id="can-0v-KEU"/>
+                                <segue destination="kcP-vE-O7S" kind="presentation" id="jhD-0d-OZu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="starSettingLabel" destination="uD8-9T-7wQ" id="pSZ-kn-2XK"/>
+                        <outlet property="starsSlider" destination="jOA-0v-3aQ" id="OPF-iy-Lc6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1XK-zz-iiy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="998" y="-721"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FpP-oR-azb">
@@ -149,9 +219,31 @@
             </objects>
             <point key="canvasLocation" x="-154" y="-557"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4Pe-Y0-K4B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sQb-af-IGq" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hA7-ob-wzS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yop-NP-4FW" kind="relationship" relationship="rootViewController" id="ALC-hx-BEe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yac-cu-fzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="916" y="6"/>
+        </scene>
     </scenes>
     <resources>
         <image name="fork" width="18" height="24"/>
         <image name="star" width="21" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="X0j-DO-jUb"/>
+        <segue reference="jhD-0d-OZu"/>
+    </inferredMetricsTieBreakers>
 </document>
